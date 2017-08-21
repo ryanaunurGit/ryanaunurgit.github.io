@@ -1,0 +1,71 @@
+@import url("bootstrap.min.css");
+
+.header .header__title > b {
+	color: #404acd;
+}
+.header:not(.is-fixed) .header__title {
+	color: #FFF;
+}
+.header:not(.is-fixed) .header__title > b {
+	color: #abb1ff;
+}
+
+.small-padding {
+	padding: 2.4rem 2.5rem 3rem !important;
+}
+
+.no-margin {
+	margin: 0;
+}
+.no-padding {
+	padding: 0 !important;
+}
+
+#about {
+	overflow: hidden;
+}
+#pricing {
+	background-color: #dedede;
+}
+.pricing__list .col-md-3 {
+	padding-left: 8px !important;
+	padding-right: 8px !important;
+}
+.pricing__item > div {
+	border-radius: 3px;
+}
+.pricing__item > div.profitable {
+	border: 2px solid #404acd;
+}
+
+.card__header {
+    padding: 16px;
+    text-align: center;
+    color: #404acd;
+    background-color: #f5f5f5;
+    font-weight: 500;
+    font-size: 18px;
+}
+.card__body {
+	padding: 2em 16px;
+}
+.card__body > p {
+	color: #333;
+	margin-bottom: 8px;
+}
+.btn:hover {
+	color: #FFF;
+}
+.btn__outline {
+    background: transparent !important;
+    color: #FFF !important;
+    border: 2px solid #FFF !important;
+    box-shadow: none !important;
+    margin-left: 8px !important;
+}
+
+@media only screen and (max-width: 680px) {
+	.recomendation__list .recomendation__item:not(:last-child) {
+		margin-bottom: 1em;
+	}
+}
