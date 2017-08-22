@@ -64,6 +64,30 @@
     margin-left: 8px !important;
 }
 
+#quotes .card {
+    position: absolute;
+    z-index: 99;
+    top: 5em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.coin {
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+}
+.bitcoin-coin {
+	background: url('/img/coins.png') no-repeat -320px -26px;
+}
+.dash-coin {
+	background: url('/img/coins.png') no-repeat -704px -26px;}
+.eth-coin {
+	background: url('/img/coins.png') no-repeat -608px -122px;
+}
+.ltc-coin {
+	background: url('/img/coins.png') no-repeat -608px -218px;}
+
 @media only screen and (max-width: 680px) {
 	.recomendation__list .recomendation__item:not(:last-child) {
 		margin-bottom: 1em;
