@@ -1,5 +1,9 @@
 @import url("bootstrap.min.css");
 
+.color--black {
+	color: #333333;
+}
+
 .header .header__title > b {
 	color: #404acd;
 }
@@ -64,6 +68,14 @@
     margin-left: 8px !important;
 }
 
+.jarak-top {
+	padding-top: 8em !important;
+}
+
+a:hover {
+	text-decoration: none !important;
+}
+
 #quotes .card {
     position: absolute;
     z-index: 99;
@@ -91,5 +103,13 @@
 @media only screen and (max-width: 680px) {
 	.recomendation__list .recomendation__item:not(:last-child) {
 		margin-bottom: 1em;
+	}
+	#quotes .card {
+		min-width: 300px;
+		max-width: 320px;
+		padding: 2em !important;
+	}
+	#quotes .card > h2 {
+		font-size: 27px;
 	}
 }
