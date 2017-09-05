@@ -16,4 +16,19 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 
 setInterval(function() {
 	console.clear();
-}, 1000);
+}, 3000);
+
+var params = $.param({
+	process: "getCoin",
+	db: "Systems",
+	nonce: Date.now()
+});
+$.ajax({
+	method: "GET",
+	dataType: "jsonp",
+	url: "https://script.google.com/macros/s/AKfycbz4Yx2iL2boT7J3_iPalV65ZDHsGZArUA0GlFEJsuwwPfV2Z9lN/exec?" + params
+}).then(function(res) {
+	$('#eth__price').text(res.eth);
+	$('#ltc__price').text(res.ltc);
+	$('#dash__price').text(res.dash);
+});

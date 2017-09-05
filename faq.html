@@ -23,11 +23,9 @@
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/ico/apple-icon-180x180.png">
 	<link rel="icon" type="image/png" sizes="192x192"  href="/img/ico/android-icon-192x192.png">
 	<link rel="manifest" href="/manifest.json">
-	<meta name="msapplication-TileColor" content=
-"#404acd">
+	<meta name="msapplication-TileColor" content="#404acd">
 	<meta name="msapplication-TileImage" content="/img/ico/ms-icon-144x144.png">
-	<meta name="theme-color" content=
-"#404acd">
+	<meta name="theme-color" content="#404acd">
 
  	<!-- Font Awesome -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -41,7 +39,7 @@
 	</style>
 </head>
 <body>
-	<header class="header js-header is-fixed">
+	<header class="header js-header is-fixed custom-tos-header">
 		<div class="header__container">
 			<h3 class="header__title no-margin">
 				Nyan<b>Hash</b>
@@ -165,7 +163,7 @@
 								<div class="panel-body">
 									<h5><span class="label label-primary">Answer</span></h5>
 
-									<p>Terdapat faktor tertentu mengapa pendapatan anda menurun. Beberapa faktor tersebut adalah perkembangan pasar, Nilai tukar dengan Dollar ($), dan tingkat kesulitan (Mining Deficulity).</p>
+									<p>Terdapat faktor tertentu mengapa pendapatan anda menurun. Beberapa faktor tersebut adalah perkembangan pasar, Nilai tukar dengan Dollar ($), dan tingkat kesulitan (Mining Difficulty).</p>
 								</div>
 							</div>
 						</div>
@@ -195,7 +193,7 @@
 								<div class="panel-body">
 									<h5><span class="label label-primary">Answer</span></h5>
 
-									<p>Kami hanya mengizinkan 30 menit untuk pembayaran dalam mata uang Bitcoin untuk masuk ke dalam dompet kami. Setelah periode ini, order akan berakhir. Harap melakukan re-order ketika order anda sudah berstatus 'Expired'.</p>
+									<p>Kami hanya mengizinkan 30 menit untuk prosess pembayaran dalam mata uang Bitcoin untuk masuk ke dalam dompet kami. Setelah periode ini, order akan berakhir. Silahkan melakukan re-order kembali atau hubungi tim layanan pelanggan kami secara langsung untuk membantu Anda memprosess order secara manual.</p>
 								</div>
 							</div>
 						</div>
@@ -217,7 +215,7 @@
 						<div class="panel panel-default ">
 							<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question5">
 								<h4 class="panel-title">
-									<a class="ing">Q: Apa itu tingkat Kesulitan atau Mining Deficulity?</a>
+									<a class="ing">Q: Apa itu tingkat Kesulitan atau Mining Difficulty?</a>
 							  </h4>
 
 							</div>
@@ -225,7 +223,23 @@
 								<div class="panel-body">
 									<h5><span class="label label-primary">Answer</span></h5>
 
-									<p>Terdapat faktor tertentu mengapa pendapatan anda menurun. Beberapa faktor tersebut adalah perkembangan pasar dan tingkat kesulitan (Mining Deficulity).</p>
+									<p>Difficulty adalah ukuran seberapa sulitnya menemukan hash. Setiap coin memiliki Difficulty sendiri sendiri.</p>
+									<p>Untuk lebih jelas nya silahkan kunjungi Wiki disini <a href="https://en.bitcoin.it/wiki/Difficulty">https://en.bitcoin.it/wiki/Difficulty</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default ">
+							<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question5">
+								<h4 class="panel-title">
+									<a class="ing">Q: Apakah ada biaya bulanan atau tahunan?</a>
+							  	</h4>
+
+							</div>
+							<div id="question5" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									<h5><span class="label label-primary">Answer</span></h5>
+
+									<p>Pembayaran hanya di peruntunkan untuk penyewaan atau pembelian Cloud Mining saja. Member tidak di kenakan biaya bulanan maupun tahunan.</p>
 								</div>
 							</div>
 						</div>
@@ -248,9 +262,24 @@
 
 										<li><b>Bitcoin</b>
 										<br>
-										<p>Pembayaran menggunakan Bitcoin dengan mentransfer bitcoin ke alamat wallet kami. Pembayaran menggunakan Bitcoin sangat di saran kan oleh kami, Karena akan mempersingkat prosess pembelian Cloud Mining dan terhindar dari fee yang besar.</p></li>
+										<p>Pembayaran menggunakan Bitcoin dapat dilakukkan dengan mentransfer sejumlah bitcoin ke alamat wallet kami. Pembayaran menggunakan Bitcoin sangat di saran kan oleh kami, Karena akan mempersingkat prosess pembelian Cloud Mining dan terhindar dari fee yang besar.</p></li>
 									</ul>
 									<p>Untuk pertanyaan lebih lanjut tentang prosess pembayaran, harap hubungi kami di <a href="mailto://billing@nyanhash.web.id">billing@nyanhash.web.id</a></p>
+								</div>
+							</div>
+						</div>
+						<div class="panel panel-default ">
+							<div class="panel-heading accordion-toggle collapsed question-toggle" data-toggle="collapse" data-parent="#faqAccordion" data-target="#question12">
+								<h4 class="panel-title">
+									<a class="ing">Q: Apa itu 'Fee Transfer'?</a>
+							  </h4>
+
+							</div>
+							<div id="question12" class="panel-collapse collapse" style="height: 0px;">
+								<div class="panel-body">
+									<h5><span class="label label-primary">Answer</span></h5>
+
+									<p>Fee transfer hanya berlaku untuk pembayaran Cloud Mining dengan metode Bank/ATM. Fee Transfer adalah jumlah Fee Transfer Bitcoin ke Wallet kami. Fee transfer yang di tetapkan oleh Blockchain adalah sebesar <b>0.005 BTC.</b></p>
 								</div>
 							</div>
 						</div>
@@ -290,6 +319,6 @@
 	
 	<script src="/js/jquery/jquery.min.js?v=v2.2.3"></script>
 	<script src="/js/bootstrap/bootstrap.min.js?v=v3.3.7"></script>
-<!-- 	<script src="/js/vendors.js?v=v1.0.1"></script> -->
+	<script src="/js/vendors.js?v=v1.0.1"></script>
 </body>
 </html>
