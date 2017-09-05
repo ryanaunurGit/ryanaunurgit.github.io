@@ -189,7 +189,8 @@ a:hover {
 	.btn__outline {
 		margin-left: 0 !important;
 	}
-	.pricing__item {
+	.pricing__item,
+	.coin__price_item {
 	    margin-bottom: 8px;
 	}
 }
