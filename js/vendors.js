@@ -18,15 +18,10 @@ setInterval(function() {
 	console.clear();
 }, 3000);
 
-var params = $.param({
-	process: "getCoin",
-	db: "Systems",
-	nonce: Date.now()
-});
 $.ajax({
 	method: "GET",
 	dataType: "jsonp",
-	url: "https://script.google.com/macros/s/AKfycbz4Yx2iL2boT7J3_iPalV65ZDHsGZArUA0GlFEJsuwwPfV2Z9lN/exec?" + params
+	url: "https://script.google.com/macros/s/AKfycbxlNl1jUKGTg3S8IzQWctTitVmvqxRnDc6VO3cQCJxzxBuzrUlC/exec?request=eyJwcm9zZXNzIjoiZ2V0TGFzdCIsImRhdGFiYXNlIjoiREJfTkFOTyIsInVzZXJuYW1lIjoiYWRtaW4iLCJwYXNzd29yZCI6IllXUnRhVzR4TWpNPSIsImFsZ28iOiJTSEEyNTYrQUVTIiwicGFzc3BocmFzZSI6IjU3Zjg0MjI4NjE3MTA5NDg1NWU1MWZjM2E1NDFjMWUyIiwicGF5bG9hZCI6eyJpZCI6MSwidG9rZW4iOiI0NDgxMGY1YTliZDBhNjlmZDlhN2I4OTgxZWU0MjkwOSIsInByZXZpbGFnZSI6InB1YmxpYyJ9fQ=="
 }).then(function(res) {
 	$('#eth__price').text(res.eth);
 	$('#ltc__price').text(res.ltc);
