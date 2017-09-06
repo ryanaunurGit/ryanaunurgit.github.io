@@ -193,4 +193,11 @@ a:hover {
 	.coin__price_item {
 	    margin-bottom: 8px !important;
 	}
+	.center__mobile {
+	    margin: 0 auto;
+    	display: block;
+	}
+	.extra__margin {
+	    margin-top: 16px;
+	}
 }
