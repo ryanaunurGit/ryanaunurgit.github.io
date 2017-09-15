@@ -3,6 +3,13 @@
 .color--black {
 	color: #333333;
 }
+.red-line {
+	text-decoration: line-through;
+	text-decoration-color: red;
+}
+.non-red-line {
+	text-decoration: none;
+}
 
 .header .header__title > b {
 	color: #404acd;
